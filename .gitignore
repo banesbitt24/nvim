@@ -1,5 +1,3 @@
-# Create .gitignore
-cat > .gitignore << 'EOF'
 # Lazy plugin manager
 lazy-lock.json
 **/lazy-lock.json
@@ -34,5 +32,3 @@ tags
 
 # Neovim runtime
 .netrwhist
-EOF
-
