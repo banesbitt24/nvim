@@ -148,10 +148,11 @@ The leader key is set to `<Space>`.
 ### AI (Copilot)
 | Key | Action |
 |-----|--------|
-| `<Tab>` | Accept suggestion |
-| `<S-Tab>` | Previous suggestion |
-| `<C-]>` | Dismiss suggestion |
-| `<Space>ai` | Toggle Copilot |
+| `<C-J>` | Accept full suggestion |
+| `<C-L>` | Accept next word |
+| `<C-N>` | Next suggestion |
+| `<C-P>` | Previous suggestion |
+| `<C-D>` | Dismiss suggestion |
 
 ### Window Management
 | Key | Action |
