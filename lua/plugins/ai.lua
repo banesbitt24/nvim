@@ -1,12 +1,12 @@
 return {
-    -- GitHub Copilot
+    -- GitHub Copilot (simplified)
     {
         "github/copilot.vim",
         config = function()
             -- Disable default tab mapping
             vim.g.copilot_no_tab_map = true
 
-            -- Set up keybindings
+            -- Basic keybindings
             vim.keymap.set("i", "<C-J>", 'copilot#Accept("\\<CR>")', {
                 expr = true,
                 replace_keycodes = false,
@@ -15,10 +15,6 @@ return {
 
             vim.keymap.set("i", "<C-L>", '<Plug>(copilot-accept-word)', {
                 desc = "Accept CoPilot word"
-            })
-
-            vim.keymap.set("i", "<C-H>", '<Plug>(copilot-accept-line)', {
-                desc = "Accept CoPilot line"
             })
 
             vim.keymap.set("i", "<C-N>", '<Plug>(copilot-next)', {
@@ -32,35 +28,6 @@ return {
             vim.keymap.set("i", "<C-D>", '<Plug>(copilot-dismiss)', {
                 desc = "Dismiss CoPilot suggestion"
             })
-
-            -- Optional: Set up some CoPilot specific settings
-            vim.g.copilot_filetypes = {
-                ["*"] = false,
-                ["javascript"] = true,
-                ["typescript"] = true,
-                ["lua"] = true,
-                ["rust"] = true,
-                ["c"] = true,
-                ["c#"] = true,
-                ["c++"] = true,
-                ["go"] = true,
-                ["python"] = true,
-                ["java"] = true,
-                ["php"] = true,
-                ["ruby"] = true,
-                ["html"] = true,
-                ["css"] = true,
-                ["scss"] = true,
-                ["json"] = true,
-                ["yaml"] = true,
-                ["markdown"] = true,
-                ["sh"] = true,
-                ["bash"] = true,
-                ["zsh"] = true,
-                ["vim"] = true,
-                ["dockerfile"] = true,
-                ["terraform"] = true,
-            }
         end,
     },
 
