@@ -146,6 +146,8 @@ The leader key is set to `<Space>`.
 | `<Space>gs` | Git status |
 
 ### AI (Copilot)
+
+#### Insert Mode (Code Suggestions)
 | Key | Action |
 |-----|--------|
 | `<C-J>` | Accept full suggestion |
@@ -153,6 +155,13 @@ The leader key is set to `<Space>`.
 | `<C-N>` | Next suggestion |
 | `<C-P>` | Previous suggestion |
 | `<C-D>` | Dismiss suggestion |
+
+#### Normal Mode (CoPilot Management)
+| Key | Action |
+|-----|--------|
+| `<Space>ai` | Toggle CoPilot on/off |
+| `<Space>ap` | Open CoPilot panel |
+| `<Space>as` | Check CoPilot status |
 
 ### Window Management
 | Key | Action |

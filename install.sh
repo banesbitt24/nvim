@@ -20,7 +20,7 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 # Configuration
-NVIM_CONFIG_REPO="https://github.com/YOUR_USERNAME/nvim-config.git"
+NVIM_CONFIG_REPO="git@github.com/banesbitt24/nvim-config.git"
 NVIM_CONFIG_DIR="$HOME/.config/nvim"
 BACKUP_DIR="$HOME/.config/nvim.backup.$(date +%Y%m%d_%H%M%S)"
 

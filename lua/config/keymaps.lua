@@ -29,3 +29,16 @@ keymap.set("n", "<C-s>", ":w<CR>")
 -- Close buffer
 keymap.set("n", "<leader>q", ":bd<CR>")
 
+-- CoPilot management
+keymap.set("n", "<leader>ai", function()
+    if vim.g.copilot_enabled == false then
+        vim.cmd("Copilot enable")
+        print("CoPilot enabled")
+    else
+        vim.cmd("Copilot disable")
+        print("CoPilot disabled")
+    end
+end, { desc = "Toggle CoPilot" })
+
+keymap.set("n", "<leader>ap", ":Copilot panel<CR>", { desc = "CoPilot panel" })
+keymap.set("n", "<leader>as", ":Copilot status<CR>", { desc = "CoPilot status" })
