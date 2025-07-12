@@ -45,7 +45,7 @@ return {
                 -- See Configuration section for rest
                 window = {
                     layout = 'vertical',    -- 'vertical', 'horizontal', 'float', 'replace'
-                    width = 0.5,            -- fractional width of parent, or absolute width in columns when > 1
+                    width = 0.3,            -- fractional width of parent, or absolute width in columns when > 1
                     height = 0.5,           -- fractional height of parent, or absolute height in rows when > 1
                     -- Options below only apply to floating windows
                     relative = 'editor',    -- 'editor', 'win', 'cursor', 'mouse'
