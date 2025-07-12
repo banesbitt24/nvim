@@ -34,7 +34,7 @@ return {
     -- CoPilot Chat for interactive AI conversations
     {
         "CopilotC-Nvim/CopilotChat.nvim",
-        branch = "canary",
+        branch = "main",
         dependencies = {
             { "github/copilot.vim" },    -- or github/copilot.lua
             { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
