@@ -32,7 +32,7 @@ Personal Neovim configuration with Nord theme and support for Go, Terraform, Doc
 Use the provided installation script:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/nvim-config/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/banesbit24/nvim-config/main/install.sh | bash
 ```
 
 ### Manual Installation
