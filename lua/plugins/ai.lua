@@ -31,6 +31,45 @@ return {
         end,
     },
 
+    -- CoPilot Chat for interactive AI conversations
+    {
+        "CopilotC-Nvim/CopilotChat.nvim",
+        branch = "canary",
+        dependencies = {
+            { "github/copilot.vim" },    -- or github/copilot.lua
+            { "nvim-lua/plenary.nvim" }, -- for curl, log wrapper
+        },
+        config = function()
+            require("CopilotChat").setup({
+                debug = false, -- Enable debugging
+                -- See Configuration section for rest
+                window = {
+                    layout = 'vertical',    -- 'vertical', 'horizontal', 'float', 'replace'
+                    width = 0.5,            -- fractional width of parent, or absolute width in columns when > 1
+                    height = 0.5,           -- fractional height of parent, or absolute height in rows when > 1
+                    -- Options below only apply to floating windows
+                    relative = 'editor',    -- 'editor', 'win', 'cursor', 'mouse'
+                    border = 'single',      -- 'none', single', 'double', 'rounded', 'solid', 'shadow'
+                    row = nil,              -- row position of the window, default is centered
+                    col = nil,              -- column position of the window, default is centered
+                    title = 'Copilot Chat', -- title of chat window
+                    footer = nil,           -- footer of chat window
+                    zindex = 1,             -- determines if window is on top or below other floating windows
+                },
+            })
+
+            -- Keybindings
+            vim.keymap.set('n', '<leader>cc', ':CopilotChat<CR>', { desc = 'Open CoPilot Chat' })
+            vim.keymap.set('v', '<leader>ce', ':CopilotChatExplain<CR>', { desc = 'Explain selected code' })
+            vim.keymap.set('v', '<leader>cr', ':CopilotChatReview<CR>', { desc = 'Review selected code' })
+            vim.keymap.set('v', '<leader>cf', ':CopilotChatFix<CR>', { desc = 'Fix selected code' })
+            vim.keymap.set('v', '<leader>co', ':CopilotChatOptimize<CR>', { desc = 'Optimize selected code' })
+            vim.keymap.set('v', '<leader>cd', ':CopilotChatDocs<CR>', { desc = 'Generate docs for selected code' })
+            vim.keymap.set('v', '<leader>ct', ':CopilotChatTests<CR>', { desc = 'Generate tests for selected code' })
+            vim.keymap.set('n', '<leader>cq', ':CopilotChatToggle<CR>', { desc = 'Toggle CoPilot Chat' })
+        end,
+    },
+
     -- Alternative: Codeium (free)
     --{
     --  "Exafunction/codeium.vim",

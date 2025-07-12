@@ -163,6 +163,22 @@ The leader key is set to `<Space>`.
 | `<Space>ap` | Open CoPilot panel |
 | `<Space>as` | Check CoPilot status |
 
+#### CoPilot Chat
+| Key | Action |
+|-----|--------|
+| `<Space>cc` | Open CoPilot Chat |
+| `<Space>cq` | Toggle CoPilot Chat |
+
+#### Code Analysis (Visual Mode)
+| Key | Action |
+|-----|--------|
+| `<Space>ce` | Explain selected code |
+| `<Space>cr` | Review selected code |
+| `<Space>cf` | Fix selected code |
+| `<Space>co` | Optimize selected code |
+| `<Space>cd` | Generate docs for selected code |
+| `<Space>ct` | Generate tests for selected code |
+
 ### Window Management
 | Key | Action |
 |-----|--------|

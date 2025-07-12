@@ -42,3 +42,13 @@ end, { desc = "Toggle CoPilot" })
 
 keymap.set("n", "<leader>ap", ":Copilot panel<CR>", { desc = "CoPilot panel" })
 keymap.set("n", "<leader>as", ":Copilot status<CR>", { desc = "CoPilot status" })
+
+-- CoPilot Chat
+keymap.set("n", "<leader>cc", ":CopilotChat<CR>", { desc = "Open CoPilot Chat" })
+keymap.set("n", "<leader>cq", ":CopilotChatToggle<CR>", { desc = "Toggle CoPilot Chat" })
+keymap.set("v", "<leader>ce", ":CopilotChatExplain<CR>", { desc = "Explain selected code" })
+keymap.set("v", "<leader>cr", ":CopilotChatReview<CR>", { desc = "Review selected code" })
+keymap.set("v", "<leader>cf", ":CopilotChatFix<CR>", { desc = "Fix selected code" })
+keymap.set("v", "<leader>co", ":CopilotChatOptimize<CR>", { desc = "Optimize selected code" })
+keymap.set("v", "<leader>cd", ":CopilotChatDocs<CR>", { desc = "Generate docs for selected code" })
+keymap.set("v", "<leader>ct", ":CopilotChatTests<CR>", { desc = "Generate tests for selected code" })
