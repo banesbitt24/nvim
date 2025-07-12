@@ -44,7 +44,7 @@ curl -fsSL https://raw.githubusercontent.com/YOUR_USERNAME/nvim-config/main/inst
 
 2. **Clone this repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/nvim-config.git ~/.config/nvim
+   git clone git@github.com/banesbitt24/nvim-config.git ~/.config/nvim
    ```
 
 3. **Install dependencies:**
